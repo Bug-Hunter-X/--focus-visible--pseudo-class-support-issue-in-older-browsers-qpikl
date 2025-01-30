@@ -1,0 +1,19 @@
+To address this issue, we can utilize a JavaScript polyfill, such as the one provided by the `focus-visible` npm package. Here's how you can integrate the polyfill and maintain CSS styling consistency:
+
+1. **Install the polyfill:**
+```bash
+npm install focus-visible
+```
+2. **Import the polyfill:** Import `focus-visible.js` in your HTML file (typically in your main js file)
+```html
+<script src="path/to/focus-visible.js"></script>
+```
+3. **CSS remains the same:**  The CSS code requires no modification after integrating the polyfill. The polyfill will handle the browser compatibility issues.
+
+```css
+.my-element:focus-visible {
+  outline: 2px solid blue;
+}
+```
+
+By including the polyfill, your CSS will now function correctly across all supported browsers, resolving the unexpected focus style issue in older versions.
