@@ -1,0 +1,7 @@
+The following CSS code snippet demonstrates an uncommon error related to the usage of the `:focus-visible` pseudo-class.  The error occurs because the `:focus-visible` pseudo-class is only supported in modern browsers and does not work as expected in older browsers.  In older browsers the focus style (outlined) will always be applied.
+
+```css
+.my-element:focus-visible {
+  outline: 2px solid blue;
+}
+```
